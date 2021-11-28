@@ -18,7 +18,7 @@ public class DeckOfCards {
 
 		// populate deck with Card objects
 		for (int count = 0; count < deck.length; count++) {
-			new Card(faces[count % 13], suits[count / 13]);
+			deck[count] = new Card(faces[count % 13], suits[count / 13]);
 		}
 	}
 
